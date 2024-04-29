@@ -1,14 +1,16 @@
 {
-  "root": true,
-  "env": {
-    "es6": true,
-    "node": true
-  },
-  "extends": ["eslint:recommended", "prettier", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": { "project": ["./tsconfig.json"] },
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    "no-console": ["warn", { "allow": ["info", "warn", "error"] }]
-  }
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ]
 }
