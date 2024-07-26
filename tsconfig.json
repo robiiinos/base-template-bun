@@ -2,8 +2,7 @@
   "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist" /* Redirect output structure to the directory. */,
-    "resolveJsonModule": true /* Allows importing modules with a ‘.json’ extension. */,
-    "importsNotUsedAsValues": "remove" /** Deprecated in TypeScript 5 */
+    "resolveJsonModule": true /* Allows importing modules with a ‘.json’ extension. */
   },
   "include": ["src"],
   "exclude": ["node_modules"]

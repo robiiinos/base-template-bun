@@ -1,9 +1,7 @@
-import logger from "./utils/logger";
-
 const main = async () => {
-  logger.info("Hello World!");
+  console.info("Hello World!");
 };
 
 main().catch((error) => {
-  logger.error(error);
+  console.error(error);
 });
