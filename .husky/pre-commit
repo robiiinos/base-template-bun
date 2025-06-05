@@ -1,2 +1,2 @@
-yarn format:check
-yarn lint:check
+bun run format:check
+bun run lint:check

@@ -7,28 +7,25 @@
   "author": "robiiinos",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "dev": "NODE_ENV=development ts-node-dev --respawn --transpile-only ./src/index",
+    "dev": "bun run --watch src/index.ts",
     "format:check": "biome format",
     "format:write": "biome format --write",
     "lint:check": "biome lint",
     "lint:write": "biome lint --write",
-    "postinstall": "yarn prepare",
-    "prepare": "husky",
-    "start": "NODE_ENV=production node ./dist/index.js"
+    "postinstall": "bun run prepare",
+    "prepare": "husky prepare",
+    "start": "bun run --production src/index.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "@commitlint/cli": "^19.1.0",
-    "@commitlint/config-conventional": "^19.1.0",
-    "@tsconfig/node20": "^20",
-    "@types/node": "^20",
+    "@biomejs/biome": "1.9.4",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/bun": "^1.2.0",
     "husky": "^9.1.0",
-    "ts-node": "^10.9.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.8.0"
   },
   "engines": {
-    "node": "20.x"
-  }
+    "bun": "1.2.15"
+  },
+  "packageManager": "bun@1.2.15"
 }
