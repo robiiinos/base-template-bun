@@ -13,19 +13,18 @@
     "lint:check": "biome lint",
     "lint:write": "biome lint --write",
     "postinstall": "bun run prepare",
-    "prepare": "husky prepare",
+    "prepare": "husky",
     "start": "bun run --production src/index.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.2",
+    "@biomejs/biome": "2.2.4",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@types/bun": "^1.2.0",
     "husky": "^9.1.0",
-    "typescript": "^5.8.0"
+    "typescript": "^5.9.0"
   },
   "engines": {
-    "bun": "1.2.15"
-  },
-  "packageManager": "bun@1.2.15"
+    "bun": "latest"
+  }
 }
